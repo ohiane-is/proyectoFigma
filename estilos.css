@@ -1,0 +1,232 @@
+*{
+    width: 900px;
+    margin: 0 auto;
+
+
+}
+body{
+    background-color: #C0C0C0;
+    
+}
+#cabecera{
+
+    background-image: url("imgs/mesa2.jpg");
+    background-repeat: no-repeat;
+    width: 900px;
+    height: 500px;
+  background-size: cover;
+    background-position-y:center center;
+    
+    position: relative;
+    background-color: white;
+    
+    
+}
+#cabecera:before{
+    content: '';
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+#logotipo{
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+    margin-top: 50px;
+    position: absolute;
+
+}
+h1{
+    padding-top: 15px;
+    margin-left: 50px;
+    color: rgba(102, 36, 102,1);
+    font-weight: bold;
+    position: absolute;
+    top: 200px;
+}
+nav{
+    display: none;
+}
+#menu{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 20px;
+ 
+    width: 86px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0);
+      border:#324D48 3px solid ;
+    margin-right: 35px;
+    font-size: 20px;
+    color: #324D48 ;
+    font-weight: bold;
+
+}
+section{
+    background-color: white;
+    position: relative;
+  font-size: 18px;
+  color: #373737;
+
+}
+#SobreMi{
+
+  background-color: white;
+height: 450px;
+ 
+}
+
+
+.empresa{
+    color:#0D4980;
+    font-weight: bold;
+    font-size: 18px;
+}
+p,h3{
+     padding: 8px;
+    width: 800px;
+}
+
+h2{
+    padding-top: 30px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    width: 800px;
+  
+}
+.buttonArriba{
+    position: absolute;
+    
+    border: #BF86BF;
+    background-color: #BF86BF;
+    right: 0;
+    bottom: 0;
+    width: 39px;
+    height: 39px;
+}
+.separador{
+    background-color: #BF86BF;
+    height: 5px;
+    border: #BF86BF;
+    
+}
+.arriba{
+    font-size: 50px;
+    color: white;
+    padding-left: 8px;
+
+   
+}
+
+#contenedorProductos{
+    background-color: white;
+    height: 850px;
+    
+  
+}
+#tarjetaRosa{
+    background-color: #FFD9FF;
+    height: 650px;
+    padding-top: 15px;
+  
+}
+
+#producto{
+   
+    background-color: white;
+    width: 400px;
+    height: 600px;
+    
+    margin-top: 20px;
+
+    
+}
+h3{
+    padding-top: 10px;
+    margin-bottom: 10px;
+    color: #0D4980;
+    font-size: 26px;
+    width:300px ;
+}
+#producto p{
+   
+    width:300px ;
+    margin-top: 15px;
+   
+}
+
+#Productos img{
+    width: 400px;
+    height: 300px;
+
+}
+
+#imagen img{
+    width: 500px;
+    height: 600px;
+   margin-left: 200px;
+}
+#circulos{
+    display: flex;
+    margin-left: 325px;
+}
+#circulos div:first-child{
+    background-color: red;
+}
+.circle{
+    border: black 1px solid;
+    margin: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    
+   
+}
+#textoTrabajos{
+    margin-top: 10px;
+    width: 500px;
+   position: relative;
+}
+#textoTrabajos span{
+    color: #1B1B1B;
+    font-size: 25px;
+
+}
+#textoTrabajos p{
+    color: #525252;
+    padding:40px;
+    line-height: 2;
+    font-size: 20px;
+}
+#textoTrabajos a{
+   position: absolute;
+   bottom: 0;
+   margin-left: 400px;
+   margin-bottom: 100px;
+ 
+}
+/*footer*/
+#formulario{
+    background-color: #662466;
+    color: white;
+}
+form{
+    width: 800px;
+}
+
+input,textarea{
+    width: 500px;
+   
+}
+fieldset{
+    width: 400px;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es"><!--Importante poner idioma para lector-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header id="cabecera"> 
+
+        
+        <img id="logotipo" src="imgs/logoTarea4.jpg" alt=""/>
+        <h1>HAZ REALIDAD SU DESEO<br> MAS DULCE</h1>
+        <button id="menu" onclick="abrirMenu">Menú</button>
+        <nav>
+            <button id="cerrar" aria-label="cerrar menu" onclick="cerrarMenu()">X</button>
+            <ul>
+
+                <li><a href="#SobreMi"><span id=iconoSobreMi></span>Sobre Mí</a></li>
+                <li><a href="#Productos"><span id=iconoProductos></span>Sobre Mí</a></li>
+                <li><a href="#Trabajos"><span id=iconoTrabajos></span>Sobre Mí</a></li>
+                <li><a href="#Contacto"><span id=iconoContacto></span>Sobre Mí</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="SobreMi" aria-label="información para conocer más a Sweet Party">
+            <h2>Sobre Mí</h2>
+            <p><span class="empresa">Sweet Party</span> es una empresa de repostería artesanal que se especializa en crear tartas personalizadas únicas. Desde que era niña he tenido una pasión por la repostería y las manualidades. Con el tiempo descubrí que podía combinar ambas pasiones para crear tartas personalizadas que reflejen la personalidad y los gustos de cada cliente.</p>
+            <br><p>Creo que cada tarta es una oportunidad para hacer realidad los deseos más dulces de mis clientes. Me enorgullece cuidar cada detalle, desde los ingredientes hasta la personalización, para crear tartas únicas que hagan que cada celebración sea aún mas especial.</p>
+            <br><p>Me encanta ver la ilusión en los ojos de mis clientes cuando recogen sus tartas personalizadas hechas a medida. Para mí no hay nada mas gratificante que hacer que el día de alguien sea un poco mas dulce.</p>
+            <br><p>¡Gracias por elegir <span class="empresa">Sweet Party</span> para hacer realidad tus deseos más dulces!</p>
+            
+            <br><div  class="buttonArriba"   ><a href="#cabecera" aria-label="acceso directo cabecera pagina"><span class="arriba">^</span></a></div>
+        
+        </section>
+        <hr class="separador">
+        <section id="Productos" aria-label="Imagen y texto de los productos que ofrece Sweet Party">
+            <article>
+                <div id="contenedorProductos">
+                <h2>Productos</h2>
+                <div id="tarjetaRosa">
+                    <div id="producto">
+                        <h3>Macarons</h3>
+                        <span id="icono"></span>
+                        <img  src="imgs/macarons.jpg"  alt="Plato con el producto macarons elaborado artesanalmente por Sweet Party">
+                        <p>¿Un dulce diferente?</p>
+                        <p>Los macarons son pequeñas obras de arte<br> 
+                            comestibles que deleitan los sentidos.><br>
+                            <br>Elaboramos los macarons más exquisitos y<br> 
+                            variados para satisfaces todos los gustos.
+                        </p>
+                        <div class="buttonArriba"   ><a href="#cabecera" aria-label="acceso directo cabecera pagina"><span class="arriba">^</span></a></div>
+                    </div>
+
+                </div>
+            </div>
+            </article>
+        </section>
+        <hr class="separador">
+        <section id="Trabajos" aria-label="Fotos con algunos trabajos realizados por Sweet Party">
+            <h2>Trabajos</h2>
+            <div id="imagen">
+                <img src="imgs/tarta1.jpg" alt=" Tarta tres pisos con motivo temático marino decorada toda con fondant, en último piso decorando una figura de pulpo también con fondant, elaboración artesanal">
+            </div>
+            <div id="circulos">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <div id="textoTrabajos">
+                <p>Si quieres ver más sobre mi<br>
+                    trabajo no dudes en visitar<br>
+                     mi &nbsp; <span id="txtInstagram">Instagram</span>
+                </p>
+                <img src="" alt="">
+                <a href="https://www.instagram.com/" aria-label="abre Instagram Sweet Party en otra página"><img src="" alt="instagram"></a> 
+            </div>
+            <div class="buttonArriba"   ><a href="#cabecera" aria-label="acceso directo cabecera pagina"><span class="arriba">^</span></a></div>
+
+        </section>
+        <hr class="separador">
+        <section id="Contacto" aria-label="contacto con Sweet Party">
+            <h2>Contacto</h2>
+            <div id="formulario">
+            <form action="index.php" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Datos Envio</legend>
+
+                    <label for="nombre">Nombre <span class="obligatorio">*</span></label><br>
+                    <input type="text" id="nombre" aria-required="true" autocomplete="name" aria-describedby="errorNombre" pattern="[A-Za-z]*" required>
+                    <p id="errorNombre" role="alert">El nombre solo puede contener letras, no números</p>
+
+                    <label for="email">Email <span class="obligatorio">*</span></label><br>
+                    <input type="email" id="email" aria-required="true" autocomplete="email" aria-describedby="errorEmail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
+                    <p id="errorEmail" role="alert">Escribe mail en formato correcto: ejemplo@ejemplo.com</p>
+
+                    <label for="telefono">Teléfono </label><br>
+                    <input type="tel" id="telefono"  autocomplete="off">
+                    <br><br>
+                    
+                    <label for="asunto">Asunto<span class="obligatorio">*</span></label><br>
+                    <textarea id="asunto" rows="10" cols="40"   autocomplete="off"  aria-required="true" required></textarea>
+                    
+
+
+                </fieldset>
+           
+                <div id="privacidad">
+                   
+                    
+                    <label >
+                        <input type="checkbox" name="privacidad"  required>
+                        Acepto los términos y condiciones y la política de privacidad.
+                    </label>
+                </div>
+
+                <input type="button" name="enviar" value="Enviar">
+
+            </form> 
+        </div>
+
+            <div class="buttonArriba"><a href="#cabecera" aria-label="acceso directo cabecera pagina"><span class="arriba">^</span></a></div>
+            <p class="footer"><span class="contactos">Llámame</span><br>&nbsp;6222222222</p>
+            <p class="footer"><span class="contactos">Envíeme un correo</span><br>&nbsp;info@mail.com</p>
+            <img src="" alt="">
+            <p class="footer"><span class="contactos">Dirección</span><br>&nbsp;Lorep Ipsum 45</p>
+
+        </section>
+        <hr class="separador">
+    </main>
+    
+</body>
+</html>
